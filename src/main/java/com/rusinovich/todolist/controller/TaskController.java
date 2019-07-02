@@ -36,13 +36,6 @@ public class TaskController {
     @Autowired
     private TaskValidator taskValidator;
 
-    /*@RequestMapping(value = "/create", method = RequestMethod.GET)
-    public String create(Model model) {
-
-
-        return "create";
-    }*/
-
     @InitBinder
     public void initBinder(WebDataBinder binder) {
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm");
@@ -65,14 +58,6 @@ public class TaskController {
 
         return "redirect:/index";
     }
-
-    /*@RequestMapping(value = {"/", "/index"}, method = RequestMethod.GET)
-    public String index(Model model) {
-        User user = userService.findByUsername(securityService.findLoggedInUsername());
-        List<Task> taskList = taskService.findByUserId(user.getId());
-        model.addAttribute("TASKS", taskList);
-        return "index";
-    }*/
 
     @RequestMapping(value = "/delete/{id}", method = RequestMethod.GET)
     public String delete(@PathVariable("id") int id) {

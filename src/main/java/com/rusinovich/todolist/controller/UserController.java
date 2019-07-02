@@ -52,13 +52,6 @@ public class UserController {
         return "index";
     }
 
-    /*@RequestMapping(value = "/#signup", method = RequestMethod.GET)
-    public String registration(Model model) {
-        model.addAttribute("userForm", new User());
-
-        return "index";
-    }*/
-
     @RequestMapping(value = "/signup", method = RequestMethod.POST)
     public String registration(@ModelAttribute("userForm") User userForm, BindingResult bindingResult, Model model) {
         userValidator.validate(userForm, bindingResult);
