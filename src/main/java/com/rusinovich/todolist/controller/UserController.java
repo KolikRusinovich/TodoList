@@ -17,9 +17,6 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 import java.util.List;
 
-/**
- * Controller for {@link com.rusinovich.todolist.model.User}'s pages.
- */
 
 @Controller
 public class UserController {
