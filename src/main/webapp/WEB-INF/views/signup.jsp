@@ -43,26 +43,3 @@
         </div>
     </div>
 </div>
-<script>
-    /*$(function() {
-        $('form').submit(function(e) {
-            var $form = $(this);
-            $.ajax({
-                type: $form.attr('method'),
-                url: $form.attr('action'),
-                data: $form.serialize(),
-                dataType: "json",
-                success : function(data) {
-                    console.log("SUCCESS: ", data);
-                    display(data);
-                },
-                error : function(e) {
-                    console.log("ERROR: ", e);
-                    display(e);
-                },
-                done : function(e) {
-                    console.log("DONE");
-                }
-        });
-    });*/
-</script>

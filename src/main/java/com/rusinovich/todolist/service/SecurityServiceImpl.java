@@ -27,7 +27,6 @@ public class SecurityServiceImpl implements SecurityService {
 
     @Override
     public String findLoggedInUsername() {
-        //return SecurityContextHolder.getContext().getAuthentication().getPrincipal().toString();
         String userDetails = SecurityContextHolder.getContext().getAuthentication().getName();
         if (userDetails != "anonymousUser") {
             return userDetails;
